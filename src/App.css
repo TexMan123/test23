@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+html, body {
+	height: 100% !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.test {
+  min-height: 100% !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar_styles {
+  background-color: white !important;
+  padding-top: 15px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.img_nav {
+  width: 250px;
+}
+
+.header {
+  background-image: url('img/baniere.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+}
+
+.img_header {
+  width:450px;
+  margin-top: 300px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.content {
+  background-image: url('img/fond.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.title_content {
+  padding-top: 170px;
+  color: #009074;
+  font-family: Roboto;
+}
+
+.title_content_2 {
+  color: #009074;
+  font-family: Roboto;
+  font-style: italic;
+}
+
+.btn_decouvre {
+  text-decoration: none;
+  background: linear-gradient(to right, #f08607, #f8af24);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 50px;
   color: white;
+  box-shadow: 0px 3px 7px 0px gray;
 }
 
-.App-link {
-  color: #61dafb;
+.img_prise {
+  position:absolute;
+  right: 0;
+  bottom: 0px;
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.row {
+  margin-right: 0px !important;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.only_travaux {
+  width: 160px;
+}
+
+.contact_text {
+  margin-top: 23px;
+}
+
+.mentions_legales {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: #009074;
+  font-weight: bold;
+}
+
+.table_mentions {
+  width: 140px;
+}
+
+.logo_rs {
+  width: 30px;
+  
+}
+
+@media (min-width: 770px) {
+  .align_only_travaux {
+    float: right;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media (max-width: 770px) {
+  .align_only_travaux {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact_text {
+    text-align: center;
+  }
+  .mentions_legales {
+    text-align: center;
+  }
+  .table_mentions {
+    display: block;
+    margin: 0 auto;
+  }
+  .tr_rs {
+    float: right;
+    margin-right: 20px;
+  }
+}
+
+@media (min-height: 900px) {
+  .header {
+    height: 450px;
+  }
+  .img_header {
+    margin-top: 400px;
   }
 }
